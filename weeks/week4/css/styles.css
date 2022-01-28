@@ -1,0 +1,42 @@
+/* styles for my form3 and arithmetic form */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 400px;
+    margin: 30px auto;
+    border: 1px solid green;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+}
+
+.box {
+    width: 400px;
+    margin: 0 auto;
+}

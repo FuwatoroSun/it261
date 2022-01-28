@@ -1,0 +1,130 @@
+/* styles for my website */
+/* Ctrl+/ : comment out */
+
+/* * : apply for all */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    /* height: 200px; */
+    background: yellow;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+#inner-header, #inner-footer {
+    margin: 0px auto;
+    max-width: 1200px;
+    /* wrapper to soroeru */
+}
+
+#logo {
+    float: left;
+    width: 170px;
+}
+
+nav ul {
+    float: right;
+    margin-top: 30px;
+}
+
+nav li {
+    float: left;
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.current {
+    color: red;
+}
+
+#wrapper {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+#hero {
+    height: 300px;
+    margin-bottom: 20px;
+    background: #f00;
+    clear: both;
+}
+
+main {
+    width: 63%;
+    /* height: 400px; */
+    padding: 5px;
+    margin-bottom: 20px;
+    /* background: lightblue; */
+    float: left;
+}
+
+main h1, h2, p {
+    margin-bottom: 20px;
+}
+
+.lightblue {
+    color: rgb(0, 250, 208);
+}
+
+.blue {
+    color: rgb(0, 132, 255);
+}
+
+.red {
+    color: rgb(255, 72, 0);
+}
+
+.purple {
+    color: rgb(60, 0, 95);
+}
+
+.yellow {
+    color: rgb(255, 196, 0);
+}
+
+.orange {
+    color: rgb(255, 115, 0);
+}
+
+.brown {
+    color: rgb(112, 60, 0);
+}
+
+main li {
+    margin-left: 50px;
+}
+
+aside {
+    width: 35%;
+    /* height: 300px; */
+    padding: 5px;
+    /* background: coral; */
+    float: right;
+}
+
+.img {
+    max-width: 300px;
+}
+
+footer {
+    /* background: #666; */
+    border-top: 1px solid #666;
+    height: 50px;
+    clear: both;
+    height: 50px;
+    line-height: 50px;
+}
+
+footer li {
+    float: left;
+    margin-right: 30px;
+    list-style-type: none;
+}
