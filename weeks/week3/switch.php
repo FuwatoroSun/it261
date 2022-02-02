@@ -12,6 +12,7 @@
 //     echo 'Not';
 // }
 
+date_default_timezone_set('America/Los_Angeles');
 
 // starting the switch
 // if something is set, $today, then all is well
