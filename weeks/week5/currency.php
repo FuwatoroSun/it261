@@ -40,9 +40,9 @@
         <!-- you cannot select "Select one" -->
         <select name="bank">
             <option value="" NULL <?php if(isset($_POST['bank']) && $_POST['bank'] == NULL) echo 'selected = "unselected"' ; ?>>Select one</option>
-            <option value="boa" NULL <?php if(isset($_POST['bank']) && $_POST['bank'] == 'boa') echo 'selected = "unselected"' ; ?>>Bank of America</option>
-            <option value="chase" NULL <?php if(isset($_POST['bank']) && $_POST['bank'] == 'chase') echo 'selected = "unselected"' ; ?>>Wells Fargo</option>
-            <option value="becu" NULL <?php if(isset($_POST['bank']) && $_POST['bank'] == 'becu') echo 'selected = "unselected"' ; ?>>BECU</option>
+            <option value="boa" <?php if(isset($_POST['bank']) && $_POST['bank'] == 'boa') echo 'selected = "selected"' ; ?>>Bank of America</option>
+            <option value="chase" <?php if(isset($_POST['bank']) && $_POST['bank'] == 'chase') echo 'selected = "selected"' ; ?>>Wells Fargo</option>
+            <option value="becu" <?php if(isset($_POST['bank']) && $_POST['bank'] == 'becu') echo 'selected = "selected"' ; ?>>BECU</option>
         </select>
 
         <input type="submit" value="Convert it!">

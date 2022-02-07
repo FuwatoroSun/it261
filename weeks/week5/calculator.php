@@ -36,11 +36,11 @@
 
         <select name="mpg">
             <option value="" NULL <?php if(isset($_POST['mpg']) && $_POST['mpg'] == NULL) echo 'selected = "unselected"' ; ?>>Select one</option>
-            <option value="10" NULL <?php if(isset($_POST['mpg']) && $_POST['mpg'] == '10') echo 'selected = "unselected"' ; ?>>Terrible @ 10mpg</option>
-            <option value="20" NULL <?php if(isset($_POST['mpg']) && $_POST['mpg'] == '20') echo 'selected = "unselected"' ; ?>>OK @ 20mpg</option>
-            <option value="30" NULL <?php if(isset($_POST['mpg']) && $_POST['mpg'] == '30') echo 'selected = "unselected"' ; ?>>Good @ 30mpg</option>
-            <option value="40" NULL <?php if(isset($_POST['mpg']) && $_POST['mpg'] == '40') echo 'selected = "unselected"' ; ?>>Awesome @ 40mpg</option>
-            <option value="50" NULL <?php if(isset($_POST['mpg']) && $_POST['mpg'] == '50') echo 'selected = "unselected"' ; ?>>Amazing @ 50mpg</option>
+            <option value="10" <?php if(isset($_POST['mpg']) && $_POST['mpg'] == '10') echo 'selected = "selected"' ; ?>>Terrible @ 10mpg</option>
+            <option value="20" <?php if(isset($_POST['mpg']) && $_POST['mpg'] == '20') echo 'selected = "selected"' ; ?>>OK @ 20mpg</option>
+            <option value="30" <?php if(isset($_POST['mpg']) && $_POST['mpg'] == '30') echo 'selected = "selected"' ; ?>>Good @ 30mpg</option>
+            <option value="40" <?php if(isset($_POST['mpg']) && $_POST['mpg'] == '40') echo 'selected = "selected"' ; ?>>Awesome @ 40mpg</option>
+            <option value="50" <?php if(isset($_POST['mpg']) && $_POST['mpg'] == '50') echo 'selected = "selected"' ; ?>>Amazing @ 50mpg</option>
         </select>
 
         <input type="submit" value="Caluculate">
