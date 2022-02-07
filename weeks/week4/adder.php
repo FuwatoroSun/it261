@@ -4,7 +4,7 @@
     <title>My Adder Assignment</title>
     <style>
         body {
-            margin: 30px;
+            margin: 0 auto;
         }
         form {
             width: 400px;
@@ -17,11 +17,20 @@
             text-align: center;
             color: green;
         }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: red;
+        }
     </style>
 </head>
 <body>
     <h1>Adder.php</h1>
-    <form action="">
+    <form action="" method="post">
         <label>Enter the first number:</label>
             <input type="text" name="num1"><br>
         <label>Enter the second number:</label>
@@ -35,7 +44,7 @@
               $_POST['num2'])){
         if (empty($_POST['num1'] &&
                   $_POST['num2'])){
-            echo 'Please fill out all of the fields!';
+            echo '<p>Please fill out all of the fields!</p>';
         } else {
             $num1 = $_POST['num1'];
             $num2 = $_POST['num2'];
@@ -57,6 +66,7 @@
 
 <!--[line 5] add css codes-->
 <!--[line 24] delete / before form-->
+<!--[line 24] add method="post"-->
 <!--[line 25] put <label>-->
 <!--[line 26] lower-case N -->
 <!--[line 27] delete / before label-->
