@@ -62,24 +62,14 @@
     <main>
         <h1><?php echo $headline ;?></h1>
         <p>Want to know what the coolest anime is? Welcome! These are my favorite Japanese animes!</p>
-        <?php
-            echo $anime;
-        ?>
-        <p><?php echo $content;?></p>
+        
+        <h2>Here is my Contact Form!</h2>
 
-        <h2>Don't see your favorite anime? Check out the days below!</h2>
-        <ul>
-            <li><a href="daily.php?today=Sunday">Sunday</a></li>
-            <li><a href="daily.php?today=Monday">Monday</a></li>
-            <li><a href="daily.php?today=Tuesday">Tuesday</a></li>
-            <li><a href="daily.php?today=Wednesday">Wednesday</a></li>
-            <li><a href="daily.php?today=Thursday">Thursday</a></li>
-            <li><a href="daily.php?today=Friday">Friday</a></li>
-            <li><a href="daily.php?today=Saturday">Saturday</a></li>
-        </ul>
+        <?php include('includes/form.php') ;?>
+        
     </main>
     <aside>
-        <img class="img" src="images/<?php echo $pic;?>" alt="<?php echo $alt;?>">
+        <h3>This is my aside with an appropriate image for my topic</h3>
     </aside>
  </div> <!--end wrapper -->
 

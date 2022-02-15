@@ -1,28 +1,3 @@
-<?php
-// We need to define the page that we are on as the page
-
-define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
-switch(THIS_PAGE) {
-    case 'index.php':
-        $title = 'Our Home Page';
-        $body = 'home';
-        $headline = 'Welcome to our Home Page';
-        break;
-    case 'daily.php':
-        $title = 'Our Daily Page';
-        $body = 'daily inner';
-        $headline = 'Welcome to our Daily page where my Homework 3 switch will display!';
-}
-
-$nav['index.php'] = 'Home';
-$nav['about.php'] = 'About';
-$nav['daily.php'] = 'Daily';
-$nav['project.php'] = 'Project';
-$nav['contact.php'] = 'Contact';
-$nav['gallery.php'] = 'Gallery';
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head class="<?php echo $body ;?>">

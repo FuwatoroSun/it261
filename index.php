@@ -60,16 +60,18 @@
             </ul>
             <h3>Week 5</h3>
             <ul>
+                <li><a href="weeks/week5/null.php">null.php</a></li>
                 <li><a href="weeks/week5/currency.php">currency.php</a></li>
                 <li><a href="weeks/week5/currency2.php">currency2.php</a></li>
-                <li><a href="weeks/week5/null.php">null.php</a></li>
+                <li><a href="weeks/week5/extra_credit_currency.php">extra_credit_currency.php</a></li>
+                <li><a href="weeks/week5/extra_credit_calculator.php">extra_credit_calculator.php</a></li>
             </ul>
             <h3>Week 6</h3>
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="weeks/week6/form.php">form.php</a></li>
+                <li><a href="weeks/week6/form2.php">form2.php</a></li>
+                <li><a href="weeks/week6/functions.php">functions.php</a></li>
+                <li><a href="weeks/week6/thx.php">thx.php</a></li>
             </ul>
             <h3>Week 7</h3>
             <ul>

@@ -8,7 +8,7 @@
     <link href="css/styles2.css" type="text/css" rel="stylesheet">
 </head>
 
-<body>
+<body background = "../../images/travel.jpg">
     <h1>My Travel Caluculator</h1>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
     

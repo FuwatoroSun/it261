@@ -10,6 +10,7 @@ body {
     background-color: beige;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
+    margin-bottom: 50px;
 }
 
 form {
@@ -83,6 +84,7 @@ button a {
     text-align: center;
 }
 
+
 /* typography */
 
 h1, h2 {
@@ -101,4 +103,30 @@ h1, h2 {
     color: red;
     font-style: italic;
     font-size: .9em;
+}
+
+.video {
+    width: 550px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.happy {
+    background-color: yellow;
+}
+
+.sad {
+    background-color: #aaa;
+}
+
+.video p,iframe {
+    margin-bottom: 10px;
+}
+
+.inner_footer {
+    width: 550px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
 }
