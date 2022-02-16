@@ -172,7 +172,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <span class="error"><?php echo $regions_err ;?></span>
 
             <label>Comments</label>
-            <textarea name="comments" value="<?php if(isset($_POST['comments'])) echo htmlspecialchars($_POST(['comments'])) ;?>"></textarea>
+            <textarea name="comments"><?php if(isset($_POST['comments'])) echo htmlspecialchars($_POST['comments']) ;?></textarea>
             <span class="error"><?php echo $comments_err ;?></span>
 
             <label>Privacy</label>
