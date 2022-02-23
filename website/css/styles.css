@@ -53,7 +53,7 @@ nav a {
 #hero {
     height: 300px;
     margin-bottom: 20px;
-    background: #f00;
+    background: rgb(166, 179, 255);
     clear: both;
 }
 
@@ -99,7 +99,7 @@ main h1, h2, p {
 }
 
 main li {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 aside {
@@ -108,6 +108,15 @@ aside {
     padding: 5px;
     /* background: coral; */
     float: right;
+}
+
+aside h3 {
+    padding-bottom: 20px;
+}
+
+aside img {
+    width: 47%;
+    margin: 2px;
 }
 
 .img {
@@ -130,3 +139,83 @@ footer li {
 }
 
 /* MY FORM STYLES */
+
+/* styles for my form class exercise */
+
+form {
+    width: 400px;
+    margin: 20px auto;
+}
+
+fieldset {
+    border: 1px solid rgb(201, 204, 41);
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    display: block;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type=button] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input[type=submit] {
+    display: block;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 100%;
+}
+
+.error {
+    display: block;
+    color: red;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+form ul {
+    margin-left: 10px;
+    list-style-type: none;
+    margin-bottom: 7px;
+}
+
+select, textarea {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 140px;
+    resize: none;
+}
+
+/* Our thank you page */
+#thanks {
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+#thanks h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#thanks img {
+    height: 400px;
+}

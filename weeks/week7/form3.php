@@ -48,11 +48,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $gender = $_POST['gender'];
     }
 
-    if (empty($_POST['phone'])) {
-        $phone_err = 'Please enter your phone number';
-    } else {
-        $phone = $_POST['phone'];
-    }
+    // if (empty($_POST['phone'])) {
+    //     $phone_err = 'Please enter your phone number';
+    // } else {
+    //     $phone = $_POST['phone'];
+    // }
+
+    if(empty($_POST['phone'])) { // if empty, type in your number
+        $phone_err = 'Your phone number please!';
+    } elseif (array_key_exists('phone', $_POST)) {
+        if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])){ // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
+            $phone_err = 'Invalid format!';
+        } else {
+            $phone = $_POST['phone'];
+        } // end else
+    } // end main if
 
     if (empty($_POST['wines'])) {
         $wines_err = 'What... no wines...?';
@@ -120,7 +130,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                   $wines &&
                   $regions &&
                   $comments &&
-                  $privacy)) {
+                  $privacy) &&
+                  !preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
 
             $headers = array(
                 'From' => 'mh.io.c1211216@gmail.com',
@@ -179,7 +190,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <span class="error"><?php echo $gender_err ;?></span>
 
             <label>Phone</label>
-            <input type="tel" name="phone" value="<?php if(isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']); ?>">
+            <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if(isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']); ?>">
             <span class="error"><?php echo $phone_err ;?></span>
 
             <label>Favorite Wines</label>

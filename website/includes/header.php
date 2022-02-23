@@ -7,7 +7,7 @@
     <title><?php echo $title ;?></title>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
-<body>
+<body class="<?php echo $body ;?>">
 
 <header>
     <div id="inner-header">
@@ -26,13 +26,14 @@
         <nav>
             <ul>
                 <?php
-                    foreach($nav as $key => $value) {
-                        if(THIS_PAGE == $key) {
-                            echo '<li><a class="current" href=" '.$key.' "> '.$value.'</a></li>';
-                        } else {
-                            echo '<li><a href=" '.$key.' "> '.$value.'</a></li>';
-                        }
-                    } // end foreach
+                    // foreach($nav as $key => $value) {
+                    //     if(THIS_PAGE == $key) {
+                    //         echo '<li><a class="current" href=" '.$key.' "> '.$value.'</a></li>';
+                    //     } else {
+                    //         echo '<li><a href=" '.$key.' "> '.$value.'</a></li>';
+                    //     }
+                    // } // end foreach
+                    echo make_links($nav);
                 ?>
             </ul>
         </nav>
