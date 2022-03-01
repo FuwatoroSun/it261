@@ -259,3 +259,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } // close isset
 
 } // end server request
+
+// BELOW IS MY PHP FOR MY GALLERY
+
+$people['Edogawa_Conan'] = 'edoga_Main character_edoga2.';
+$people['Shinichi_Kudo'] = 'shini_Real figure of conan_shini2.';
+$people['Ran_Mouri'] = 'ranmo_Shinichi\'s Girlfriend_ranmo2.';
+$people['Kogoro_Mouri'] = 'kogor_Ran\'s father_kogor2.';
+$people['Heiji_Hattori'] = 'heiji_Shinichi\'s best friend_heiji2.';
+$people['Kazuha_Toyama'] = 'kazuh_Heiji\'s Girlfriend_kazuh2.';
+$people['Ai_Haibara'] = 'haiba_Conan\'s best friend_haiba2.';
+$people['Sonoko_Suzuki'] = 'sonok_Ran\'s best friend_sonok2.';

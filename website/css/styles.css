@@ -219,3 +219,27 @@ textarea {
 #thanks img {
     height: 400px;
 }
+
+/* Our gallery page */
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+}
+.image {
+    padding: 3px 3px 0 3px;
+    height: 200px;
+}
+.text {
+    padding: 10px;
+}
+.table {
+    width: 100%;
+}
+.cb {
+    clear:  both;
+}
