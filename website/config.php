@@ -2,6 +2,10 @@
 // We need to define the page that we are on as the page
 ob_start();
 
+define('DEBUG', 'TRUE');  // We want to see our errors
+
+include('credentials.php');
+
 date_default_timezone_set('America/Los_Angeles');
 
 if(isset($_GET['today'])) {
@@ -87,6 +91,11 @@ switch(THIS_PAGE) {
         $body = 'gallery inner';
         $headline = 'Welcome to our Gallery!';
         break;
+    case 'project.php':
+        $title = 'Our Project Page';
+        $body = 'project inner';
+        $headline = 'Welcome to our Project Page!';
+        break;
 }
 
 // my navigation and my function
@@ -113,8 +122,6 @@ function make_links($nav) {
 // BELOW IS MY PHP FOR MY FORM
 // Please do not use regions - use your own select option values
 // Please do not use wines - use your own checkbox options
-
-ob_start();
 
 $first_name = '';
 $last_name = '';
@@ -223,7 +230,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
              $_POST['states'],
              $_POST['comments'],
              $_POST['privacy'])) {
-        $to = 'mh.io.c1211216@gmail.com';
+        $to = 'szemeo@mystudentswa.com';
         $subject = 'Test email'.date('m/d/y, h i A');
         $body = '
             First name : '.$first_name.' '.PHP_EOL.'
@@ -270,3 +277,16 @@ $people['Heiji_Hattori'] = 'heiji_Shinichi\'s best friend_heiji2.';
 $people['Kazuha_Toyama'] = 'kazuh_Heiji\'s Girlfriend_kazuh2.';
 $people['Ai_Haibara'] = 'haiba_Conan\'s best friend_haiba2.';
 $people['Sonoko_Suzuki'] = 'sonok_Ran\'s best friend_sonok2.';
+
+// BELOW IS MY PHP FOR MY PROJECT
+
+function myError($myFile, $myLine, $errorMsg){
+    if(defined('DEBUG') && DEBUG){
+        echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+        echo 'Error message: <b> '.$errorMsg.'</b>';
+        die();
+    }  else {
+        echo ' Houston, we have a problem!';
+        die();
+    }
+}

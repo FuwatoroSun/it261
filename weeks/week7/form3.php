@@ -109,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
              $_POST['regions'],
              $_POST['comments'],
              $_POST['privacy'])) {
-        $to = 'Miho.Suzuki@seattlecolleges.edu';
+        $to = 'szemeo@mystudentswa.com';
         $subject = 'Test email'.date('m/d/y, h i A');
         $body = '
             First name : '.$first_name.' '.PHP_EOL.'
@@ -130,15 +130,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                   $wines &&
                   $regions &&
                   $comments &&
-                  $privacy) &&
-                  !preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
+                  $privacy)) {
 
             $headers = array(
                 'From' => 'mh.io.c1211216@gmail.com',
                 'Reply to:' => ''.$email.''
             );
 
-            mail($to, $subject, $body);
+            mail($to, $subject, $body, $headers);
             header('Location:thx.php');
 
         } // close if not empty statement

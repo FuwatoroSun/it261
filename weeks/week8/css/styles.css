@@ -1,0 +1,86 @@
+/* my styles for my week8 people page!!!! */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+}
+
+#wrapper {
+    max-width: 1200px;
+    /* you will still be using the values from a 940px grid please! */
+    margin: 20px auto;
+    background-color: lightcyan;
+}
+
+.inner {
+    max-width: 1200px;
+    /* you will still be using the values from a 940px grid please! */
+    margin: 0 auto;
+}
+
+main {
+    float: left;
+    /* main in px = 580px */
+    /* change to percentages = 580 divided by 940 */
+    width: 61.70%;
+    background-color: pink;
+}
+
+aside {
+    /* your aside will have a width of 340px divided by 940 */
+    width: 36.17%;
+    background-color: tan;
+    float: right;
+    text-align: center;
+    /* :; */
+}
+
+aside img {
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+footer {
+    clear: both;
+    height: 60px;
+    line-height: 60px;
+}
+
+footer li {
+    list-style-type: none;
+    float: left;
+    margin-right: 30px;
+}
+
+footer {
+
+}
+
+main ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}

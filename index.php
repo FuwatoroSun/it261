@@ -82,10 +82,8 @@
             </ul>
             <h3>Week 8</h3>
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="weeks/week8/people.php">people.php</a></li>
+                <li><a href="weeks/week8/people-view.php">people-view.php</a></li>
             </ul>
             <h3>Week 9</h3>
             <ul>
