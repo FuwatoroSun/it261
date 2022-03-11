@@ -243,3 +243,8 @@ th, td {
 .cb {
     clear:  both;
 }
+
+.adminer {
+    max-width: 100%;
+    margin: 20px;
+}

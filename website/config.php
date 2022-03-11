@@ -4,7 +4,7 @@ ob_start();
 
 define('DEBUG', 'TRUE');  // We want to see our errors
 
-include('credentials.php');
+include('credential.php');
 
 date_default_timezone_set('America/Los_Angeles');
 
@@ -289,4 +289,11 @@ function myError($myFile, $myLine, $errorMsg){
         echo ' Houston, we have a problem!';
         die();
     }
+}
+
+function random_images($photos) {
+    $my_return = '';
+    $i = rand(0,21);
+    $my_return = '<img class="img" src="images/project/ghibli'.$i.'.jpg" alt="ghibli'.$i.'">';
+    return $my_return;
 }
