@@ -14,3 +14,10 @@ function myError($myFile, $myLine, $errorMsg){
         die();
     }
 }
+
+function random_images($photos) {
+    $my_return = '';
+    $i = rand(1,6);
+    $my_return = '<img class="img" src="images/people'.$i.'.jpg" alt="people'.$i.'">';
+    return $my_return;
+}

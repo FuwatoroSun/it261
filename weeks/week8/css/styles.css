@@ -14,7 +14,6 @@ body {
     max-width: 1200px;
     /* you will still be using the values from a 940px grid please! */
     margin: 20px auto;
-    background-color: lightcyan;
 }
 
 .inner {
@@ -29,6 +28,7 @@ main {
     /* change to percentages = 580 divided by 940 */
     width: 61.70%;
     background-color: pink;
+    padding: 10px;
 }
 
 aside {
@@ -37,6 +37,7 @@ aside {
     background-color: tan;
     float: right;
     text-align: center;
+    padding: 20px;
     /* :; */
 }
 

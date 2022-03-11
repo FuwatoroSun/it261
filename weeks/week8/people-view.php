@@ -2,6 +2,7 @@
 
 // people-view.php
 include('config.php');
+include('./includes/header.php');
 
 // if id has been set!
 if(isset($_GET['id'])) {
@@ -42,7 +43,7 @@ include('header.php');
 ?>
 
 <main>
-    <h1>Welcome to our People View Page!</h1>
+    <h1>Welcome to our<br>People View Page!</h1>
     <h2>Welcome to <?php echo $first_name ;?>'s Page</h2>
     <ul>
         <?php 
