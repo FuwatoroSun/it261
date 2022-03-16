@@ -81,3 +81,34 @@ if(isset($_POST['reg_user'])) {
     } // close if count errors
 
 } // end if isset reg_user
+
+if(isset($_POST['login_user'])) {
+    $username = mysqli_real_escape_string($iConn, $_POST['username']);
+    $password = mysqli_real_escape_string($iConn, $_POST['password']);
+
+    if(empty($username)) {
+        array_push($errors, 'Username is required!');
+    }
+    if(empty($password)) {
+        array_push($errors, 'Password is required!');
+    }
+
+    $user_check_query = "SELECT * FROM users WHERE username = '$username' LIMIT 1 ";
+
+    $result = mysqli_query($iConn, $user_check_query) or die(myError(__FILE__,__LINE__,mysqli_error($iConn)));
+
+    $rows = mysqli_fetch_assoc($result);
+
+    // do we have any errors?
+    if(count($errors) == 0) {
+        $password = md5($password);
+
+        mysqli_query($iConn, $query);
+
+        $_SESSION['username'] = $username;
+        $_SESSION['success'] = $success;
+
+        header('Location: index.php');
+
+    } // close if count errors
+}
