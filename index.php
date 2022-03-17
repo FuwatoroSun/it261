@@ -87,10 +87,10 @@
             </ul>
             <h3>Week 9</h3>
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="weeks/week9/register.php">register.php</a></li>
+                <li><a href="weeks/week9/login.php">login.php</a></li>
+                <li><a href="weeks/week9/index.php">index.php</a></li>
+                <li><a href="weeks/week9/errors.php">errors.php</a></li>
             </ul>
             <h3>Week 10</h3>
             <ul>

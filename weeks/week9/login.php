@@ -1,7 +1,7 @@
 <?php
 // our login page
 include('server.php');
-include('./includes/header.php');
+include('./includes/header-no-nav.php');
 
 ?>
 

@@ -10,38 +10,65 @@ body {
     background: beige;
 }
 
+nav {
+    background: lightblue;
+    float: right;
+    margin-top: 100px;
+    margin-right: 5%;
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
 header {
     overflow: hidden;
     margin-bottom: 20px;
+    background: pink;
+    clear: both;
 }
 
 #wrapper {
     max-width: 1200px;
     margin: 30px auto;
     clear: both;
+    background: yellow;
 }
 
 .success {
-    float: left;
-    margin-left: 5%;
-    margin-top: 20px;
-    width: 200px;
+    position: absolute;
+    top: 10px;
+    left: 2%;
+    width: 150px;
     background: lightblue;
     padding: 10px;
+    font-size: .9em;
 }
 
 .welcome-logout {
-    float: right;
-    margin-right: 5%;
-    margin-top: 20px;
-    width: 200px;
+    position: absolute;
+    top: 10px;
+    right: 2%;
+    width: 120px;
     background: lightgreen;
     padding: 10px;
+    font-size: .9em;
 }
 
 .center {
     text-align: center;
     margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 form {

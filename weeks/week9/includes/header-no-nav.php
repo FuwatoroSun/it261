@@ -9,6 +9,3 @@
     <!-- <title>< ?php echo $title ;?></title> -->
 </head>
 <body>
-    <nav>
-        <?php echo make_links($nav) ;?>
-    </nav>

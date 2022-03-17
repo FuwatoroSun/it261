@@ -116,6 +116,15 @@ footer {
     padding: 15px 0px;
 }
 
+#inner-footer {
+    display: flex;
+    justify-content: center;
+}
+
+#inner-footer ul {
+    display: flex;
+}
+
 footer li {
     float: left;
     margin-right: 30px;

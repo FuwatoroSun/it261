@@ -3,7 +3,7 @@
     <ul>
         <li>Copyright &copy; <?php echo date('Y') ;?></li>
         <li>All rights Reserved</li>
-        <li><a href="../index.php">Web Design by Miho</a></li>
+        <li><a href="../../index.php">Web Design by Miho</a></li>
         <li><a id="html-checker" href="#">HTML Validation</a></li>
         <li><a id="css-checker" href="#">CSS Validation</a></li>
         <li><a id="github" href="https://github.com/FuwatoroSun">GitHub Link</a></li>

@@ -1,12 +1,12 @@
 <?php
 include('server.php');
 // eventually, we will place our header include here!!
-include('./includes/header.php');
+include('./includes/header-no-nav.php');
 ?>
 
 <div id="wrapper">
 
-<h1 class="center">Register Today!</h1>
+<h1 class="center"><?php echo $headline ;?></h1>
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>" method="post">
     <fieldset>
         <label>First Name</label>
