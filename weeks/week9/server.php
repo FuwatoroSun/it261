@@ -87,28 +87,30 @@ if(isset($_POST['login_user'])) {
     $password = mysqli_real_escape_string($iConn, $_POST['password']);
 
     if(empty($username)) {
-        array_push($errors, 'Username is required!');
+        array_push($errors, 'Username is required!!!');
     }
+
     if(empty($password)) {
-        array_push($errors, 'Password is required!');
+        array_push($errors, 'Password is required!!!');
     }
 
-    $user_check_query = "SELECT * FROM users WHERE username = '$username' LIMIT 1 ";
-
-    $result = mysqli_query($iConn, $user_check_query) or die(myError(__FILE__,__LINE__,mysqli_error($iConn)));
-
-    $rows = mysqli_fetch_assoc($result);
-
-    // do we have any errors?
-    if(count($errors) == 0) {
+    // we will be counting our errors, and hope that we have zero errors!!!!
+    if(count($errors) == 0  ) {
         $password = md5($password);
+        $query = "SELECT * FROM users WHERE username = '$username' AND  password = '$password' ";
+        // below you have a new variable that is results   NOT result
 
-        mysqli_query($iConn, $query);
+        $results = mysqli_query($iConn, $query);
 
-        $_SESSION['username'] = $username;
-        $_SESSION['success'] = $success;
+        if(mysqli_num_rows($results) == 1) {
+            $_SESSION['username'] = $username;
+            $_SESSION['success'] = $success;
+            // if the above is successful, the user will be directed to the home page, which will be index.php
+            header('Location: index.php');
+        } else {
+            array_push($errors, 'Wrong username/password combination');
+        } // close else
 
-        header('Location: index.php');
+    } // close count
 
-    } // close if count errors
-}
+} // close isset login user
