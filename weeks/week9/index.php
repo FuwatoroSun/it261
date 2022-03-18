@@ -1,8 +1,7 @@
 <?php
 // our index page which must show the session_start()
 
-ob_start();
-
+session_start();
 include('config.php');
 
 // did the user log in correctly, and if not, the user will receive a message and will be directed back to the log in page

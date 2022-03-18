@@ -1,6 +1,7 @@
 <?php
 // our index page which must show the session_start()
 
+session_start();
 ob_start();
 
 include('config.php');
