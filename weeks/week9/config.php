@@ -108,10 +108,10 @@ switch(THIS_PAGE) {
         $body = 'login inner';
         $headline = 'Login Page!';
         break;
-    case 'myname.php':
-        $title = '... Today!';
-        $body = '... inner';
-        $headline = '... Page!';
+    case 'restaurant.php':
+        $title = 'Seattle\'s best restaurant!';
+        $body = 'restaurant inner';
+        $headline = 'Restaurant Page!';
         break;
 } // closing switch for my titles, body classes etc
 
@@ -120,7 +120,7 @@ switch(THIS_PAGE) {
 $nav['index.php'] = 'Home';
 $nav['about.php'] = 'About';
 $nav['daily.php'] = 'Daily';
-$nav['myname.php'] = 'myname';
+$nav['restaurant.php'] = 'restaurant';
 $nav['contact.php'] = 'Contact';
 
 function make_links($nav) {

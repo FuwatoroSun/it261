@@ -37,25 +37,21 @@ include('./includes/header.php'); ?>
 
     <?php endif; ?>
 
-    <?php  // is our wonderful session username set??
-
-    if(isset($_SESSION['username'])) :?>
-
-    <div class="welcome-logout">
-        <h3>Welcome, 
-            <?php
-                echo $_SESSION['username'];
-            ?>
-        </h3>
-        <p><a href="index.php?logout='1'">Logout</a></p>
-    </div>
-    <!-- close welcome-logout -->
-
-    <?php endif; ?>
-
 </header>
+
 <div id="wrapper">
-    <h1>Welcome to our home page!!</h1>
+    <h1 class="center"><?php echo $headline ;?></h1>
+
+    <p class="center">
+        This is my final project website for IT261!<br>My topic is the best restaurants in Seattle. All of the restaurants listed here are places I have been to during my life in Seattle.<br>
+        For more information about this website, please visit <a href="about.php">about</a> page.<br>
+        Confused about what to have for dinner today? There is a <a href="daily.php">daily</a> page with daily restaurant recommendations.<br>
+        Or, you wanna know a list of restaurant? <a href="restaurant.php">Restaurant</a> page is ready for you!<br>
+        If you have any questions about this page, please <a href="contact.php">contact</a> me.<br>
+        All done? Here is a link to <a href="index.php?logout='1'">logout</a>!
+    </p>
+
+    <img class="seattle" src="images/seattle.jpg" alt="seattle">
 </div>
 
 <?php 
